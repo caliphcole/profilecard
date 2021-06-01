@@ -1,0 +1,81 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%, 0.1);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  height: 100vh;
+  background: url(images/bg-pattern-top.svg) no-repeat right 50vw bottom 40vh,
+    url(images/bg-pattern-bottom.svg) no-repeat left 50vw top 40vh,
+    hsl(185, 75%, 39%);
+}
+
+img {
+  border-radius: 50%;
+  border: 6px solid white;
+  margin-top: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border-radius: 1rem;
+  width: 87vw;
+  box-shadow: 0px 0px 50px 16px var(--Dark-grayish-blue);
+  max-width: 20rem;
+  /* Background */
+  background-image: url(images/bg-pattern-card.svg);
+  background-position: top;
+  background-size: 100% 140px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  margin: 5% 0 3% 0;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--Very-dark-desaturated-blue);
+  margin-right: 2%;
+}
+
+.age {
+  font-size: 18px;
+}
+
+/* Container with items centered */
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.stats {
+  display: flex;
+  border-top: 1px solid hsla(0, 0%, 70%, 0.5);
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 7%;
+  letter-spacing: 1px;
+  padding: 8%; /* makes a nice space around content*/
+}
+
+.stats-numbers {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 10%;
+}
+.stats-text {
+  font-size: 10px;
+}
